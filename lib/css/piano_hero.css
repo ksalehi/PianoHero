@@ -1,0 +1,10 @@
+#canvas {
+  margin: 50px auto;
+  border: 1px solid black;
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
