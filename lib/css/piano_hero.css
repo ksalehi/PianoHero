@@ -7,4 +7,11 @@
 h1 {
   display: flex;
   justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  font-size: 55px;
+}
+
+body {
+  background: black;
 }
