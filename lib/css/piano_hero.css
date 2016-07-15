@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 #canvas {
-  margin: 50px auto;
+  margin: 0 auto;
   border: 1px solid black;
   display: flex;
 }
@@ -10,6 +16,7 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   color: white;
   font-size: 55px;
+  margin: 25px;
 }
 
 body {
