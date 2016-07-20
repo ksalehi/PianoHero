@@ -22,3 +22,32 @@ h1 {
 body {
   background: black;
 }
+
+.hidden {
+  display: none;
+}
+
+.welcome {
+  color: white;
+  background: #4c418e;
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  font-family: 'Orbitron';
+  padding: 10px;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+
+p {
+  padding: 10px;
+  margin: 20px;
+}
+
+.space {
+  font-size: 30px;
+}
+
+.instructions {
+  font-size: 24px;
+}
