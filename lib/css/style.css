@@ -51,3 +51,28 @@ p {
 .instructions {
   font-size: 24px;
 }
+
+#mute-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 25px;
+  width: 25px;
+  background-size: 100%;
+}
+
+.off {
+  background: url('./white_mute_off.png');
+}
+
+.off:hover {
+  cursor: pointer;
+}
+
+.on {
+  background: url('./white_mute_on.png');
+}
+
+.on:hover {
+  cursor: pointer;
+}
