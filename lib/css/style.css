@@ -27,16 +27,20 @@ body {
   display: none;
 }
 
-.welcome {
+.welcome, .won {
   color: white;
   background: #4c418e;
-  height: 200px;
+  min-height: 200px;
   width: 500px;
   text-align: center;
   font-family: 'Orbitron';
   padding: 10px;
-  margin: 100px auto;
   border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -75,4 +79,20 @@ p {
 
 .on:hover {
   cursor: pointer;
+}
+
+.centered-left {
+  position: absolute;
+  left: 50%;
+}
+
+.centered-right {
+  position: relative;
+  left: -50%;
+  border: 1px solid red;
+}
+
+.won-message {
+  line-height: 30px;
+  font-size: 22px;
 }
