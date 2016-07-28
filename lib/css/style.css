@@ -31,7 +31,7 @@ body {
   color: white;
   background: #4c418e;
   min-height: 200px;
-  width: 500px;
+  width: 700px;
   text-align: center;
   font-family: 'Orbitron';
   padding: 10px;
@@ -45,15 +45,23 @@ body {
 
 p {
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .space {
   font-size: 30px;
 }
 
-.instructions {
+.welcome-header {
   font-size: 24px;
+}
+
+.instructions {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 #mute-button {
@@ -93,6 +101,24 @@ p {
 }
 
 .won-message {
+  font-family: 'Roboto', sans-serif;
   line-height: 30px;
   font-size: 22px;
+}
+
+.song-button {
+  font-family: 'Orbitron';
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.song-button:hover {
+  cursor: pointer;
+  background-color: #575757;
+  color: white;
+  transition: 0.2s ease-in-out;
 }

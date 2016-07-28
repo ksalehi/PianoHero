@@ -7,25 +7,29 @@
           type="image/png"
           href="http://downloadicons.net/sites/default/files/music-icon-66405.png">
     <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
-  </head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>  </head>
   <body>
     <h1 style="font-family: Orbitron">Piano Hero</h1>
     <div id="mute-button" class="off"></div>
 
     <div class="welcome">
-      <p class="instructions">use the home keys to play each note as it falls across the key</p>
-      <p class="space">press space to play</p>
+      <p class="welcome-header">Welcome to Piano Hero!</p>
+      <p class="instructions">Use the home keys to play each note as it falls across the key.</p>
+      <p class="instructions">Take a minute to get used to the keyboard, then choose a song to play!</p>
+      <button class="song-button">Ode to Joy</button>
+      <button class="song-button">The Lion Sleeps Tonight</button>
+      <button class="song-button">Concerning Hobbits</button>
     </div>
 
    <div class="won hidden">
      <p class="won-message"><p>
-     <p class="space">press space to play again!</p>
+     <p class="space">Choose another song to play again!</p>
+     <button class="song-button">Ode to Joy</button>
+     <button class="song-button">The Lion Sleeps Tonight</button>
+     <button class="song-button">Concerning Hobbits</button>
    </div>
 
     <canvas id="canvas"></canvas>
-
-
-
 
     <link rel="stylesheet" type="text/css" href="./lib/css/style.css">
     <script type="application/javascript" src="lib/bundle.js"></script>
