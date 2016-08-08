@@ -14,6 +14,8 @@ PianoHero is written in JavaScript with jQuery and HTML5 Canvas.
 
 ### jQuery
 
+User input in the form of keyup/keydown events cause Canvas elements to be updated and re-rendered, and start/end the audio corresponding to a given note. Users can also choose to mute the keyboard and play with the visual feedback alone if they desire.
+
 ```javascript
 GameView.prototype.bindKeyHandlers = function() {
   $(document).on('keydown', event => {
@@ -39,6 +41,8 @@ GameView.prototype.bindKeyHandlers = function() {
 
 ### HTML5 Canvas
 
+Elements are rendered to the canvas at 60Hz using JavaScript's `requestAnimationFrame` method, with a callback to the `GameView` class's custom `animate` method. `Animate` updates the location of each item as a function of the time elapsed since the previous frame (taking into account the possibility of jitter on top of the usual 60Hz refresh rate) and re-renders them with their updated position.
+
 ```javascript
   GameView.prototype.animate = function(time, playing) {
     if (this.firstCall) { // subtract off timer's time on the first call
@@ -57,6 +61,14 @@ GameView.prototype.bindKeyHandlers = function() {
     this.myReq = requestAnimationFrame(this.animate.bind(this, playing)); // keep animating
   };
 ```
+
+## Future directions
+
+Future releases will include the following features:
+
+- More song options
+- High score functionality
+- Multi-user functionality
 
 [landing_page]: ./lib/css/landing_page.png
 [piano_hero]: ./lib/css/piano_hero.png
