@@ -41,7 +41,7 @@ GameView.prototype.bindKeyHandlers = function() {
 
 ### HTML5 Canvas
 
-Elements are rendered to the canvas at 60Hz using JavaScript's `requestAnimationFrame` method, with a callback to the `GameView` class's custom `animate` method. `Animate` updates the location of each item as a function of the time elapsed since the previous frame (taking into account the possibility of jitter on top of the usual 60Hz refresh rate) and re-renders them with their updated position.
+Elements are rendered to the canvas at 60Hz using JavaScript's `requestAnimationFrame` method, with a callback to `GameView`'s custom `animate` method. `Animate` updates the location of each item as a function of the time elapsed since the previous frame (taking into account the possibility of jitter on top of the usual 60Hz refresh rate) and re-renders them with their updated position.
 
 ```javascript
   GameView.prototype.animate = function(time, playing) {
